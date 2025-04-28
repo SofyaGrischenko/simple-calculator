@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
@@ -19,12 +19,21 @@ module.exports = {
         test: /\.(scss|sass)$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg)$/i,
+        type: 'asset/inline',
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
+      minify: true,
     }),
   ],
-  devtool: 'source-map',
+  optimization: {
+    splitChunks: false,
+    minimize: false,
+  },
+  devtool: false,
 };

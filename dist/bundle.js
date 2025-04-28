@@ -1,10 +1,6 @@
 /******/ (() => {
   // webpackBootstrap
-  /*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-  console.log('satrt');
+  console.log('start');
 
   /******/
 })();
-//# sourceMappingURL=bundle.js.map
