@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0 solid transparent;
+}
+
+.main {
+  min-height: 100vh;
+  background-color: #faf1e6;
+  color: #99bc85;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  margin: 4rem 0;
+  background-color: #fdfaf6;
+  width: 50vw;
+  height: 10rem;
+  font-size: 5rem;
+  color: inherit;
+  text-align: end;
+  padding-right: 2rem;
+  border-radius: 50px;
+  box-shadow: 0.5em 0.5em #99bc85, -0.5em -0.5em #c5705d;
+}
+.input:focus {
+  outline: none;
+}
+
+.button {
+  width: 10rem;
+  height: 10rem;
+  font-size: 4rem;
+  background-color: #e4efe7;
+  color: inherit;
+}
+
+.nampad {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+}/*# sourceMappingURL=index.css.map */
