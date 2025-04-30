@@ -38,22 +38,39 @@ $accent-light: #c5705d;
   }
 }
 
-.buttons-container {
-  // display: grid;
-  // grid-template-columns: repeat(4, 1fr);
-}
-
 .button {
+  outline: none;
   width: 10rem;
   height: 10rem;
   font-size: 4rem;
   background-color: $btn-light;
   color: inherit;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $text-light;
+    color: $btn-light;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
-.nampad {
+.keyboard {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
   justify-content: center;
-  width: 60%;
+}
+
+.operators {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
 }

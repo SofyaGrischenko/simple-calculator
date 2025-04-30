@@ -31,16 +31,36 @@
 }
 
 .button {
+  outline: none;
   width: 10rem;
   height: 10rem;
   font-size: 4rem;
   background-color: #e4efe7;
   color: inherit;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #99bc85;
+  color: #e4efe7;
+}
+.button:active {
+  opacity: 0.5;
 }
 
-.nampad {
+.keyboard {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
   justify-content: center;
-  width: 60%;
+}
+
+.operators {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
 }/*# sourceMappingURL=index.css.map */
