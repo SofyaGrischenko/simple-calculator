@@ -1,6 +1,7 @@
 $bg-light: #faf1e6;
 $secondary-light: #fdfaf6;
 $btn-light: #e4efe7;
+$second-btn-light: #dfd3c3;
 $text-light: #99bc85;
 $accent-light: #c5705d;
 
@@ -23,8 +24,8 @@ $accent-light: #c5705d;
 .input {
   margin: 4rem 0;
   background-color: $secondary-light;
-  width: 50vw;
-  height: 10rem;
+  width: 40vw;
+  height: 8rem;
   font-size: 5rem;
   color: inherit;
   text-align: end;
@@ -40,13 +41,15 @@ $accent-light: #c5705d;
 
 .button {
   outline: none;
-  width: 10rem;
-  height: 10rem;
-  font-size: 4rem;
+  width: 7rem;
+  height: 7rem;
+  font-size: 3rem;
+  font-weight: 700;
   background-color: $btn-light;
   color: inherit;
   transition: 0.2s ease-in;
   cursor: pointer;
+  border-radius: 50%;
 
   &:hover {
     background-color: $text-light;
@@ -66,11 +69,21 @@ $accent-light: #c5705d;
 
 .numpad {
   display: grid;
-  grid-template-columns: repeat(3, 33%);
+  grid-template-columns: repeat(3, 33.33%);
   justify-content: center;
 }
 
 .operators {
   display: grid;
   grid-template-columns: repeat(2, 50%);
+
+  & button {
+    background-color: $text-light;
+    color: $btn-light;
+
+    &:hover{
+      background-color: $btn-light;
+      color: $text-light;
+    }
+  }
 }
