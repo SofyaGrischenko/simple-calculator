@@ -2,7 +2,7 @@ import '../styles/index.scss';
 
 export function createInput() {
   const input = document.createElement('input');
-  input.placeholder = '0';
+  input.value = 0;
   input.classList.add('input');
 
   input.addEventListener('keydown', (e) => {
