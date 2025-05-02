@@ -93,7 +93,7 @@ function handleOperatorClick(key) {
           answer = firstOperand - secondOperand;
           break;
         case '/':
-          answer = secondOperand === 0 ? 'Error' : firstOperand / secondOperand;
+          answer = firstOperand / secondOperand;
           break;
         case 'x':
           answer = firstOperand * secondOperand;

@@ -12,7 +12,4 @@ export function createThemeBtn() {
       : (button.textContent = '☀️');
   });
   return button;
-
-
-  
 }
