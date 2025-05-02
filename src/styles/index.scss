@@ -80,11 +80,13 @@
   display: grid;
   grid-template-columns: repeat(3, 33.33%);
   justify-content: center;
+  gap: 2px;
 }
 
 .operators {
   display: grid;
   grid-template-columns: repeat(2, 50%);
+  gap: 2px;
 
   & button {
     background-color: var(--text-color);

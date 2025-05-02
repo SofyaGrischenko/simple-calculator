@@ -3,6 +3,7 @@
 ## Task
 
 Link to the task:_[https://docs.google.com/document/d/1zpXXeSae-BlcxPKgw3DhxZA92cspVailrPYoaXSYrW8/edit?tab=t.0]_
+Deploy link: 
 
 ## How to run the app
 
@@ -13,6 +14,7 @@ Link to the task:_[https://docs.google.com/document/d/1zpXXeSae-BlcxPKgw3DhxZA92
 note: 'npm run lint' runs ESLint to check all .js files in the project directory for syntax errors and code style issues.
 
 ## Project Structure
+```
 dist/                # Compiled output files
 node_modules/        # Installed dependencies
 src/                 # Source code
@@ -34,3 +36,4 @@ package.json         # Project metadata and npm scripts
 package-lock.json    # Dependency lock file
 webpack.config.js    # Webpack bundler configuration
 README.md            # Project documentation
+```
