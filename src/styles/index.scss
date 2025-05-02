@@ -1,9 +1,18 @@
-$bg-light: #faf1e6;
-$secondary-light: #fdfaf6;
-$btn-light: #e4efe7;
-$second-btn-light: #dfd3c3;
-$text-light: #99bc85;
-$accent-light: #c5705d;
+:root {
+  --bg-color: #faf1e6;
+  --secondary-color: #fdfaf6;
+  --btn-color: #e4efe7;
+  --text-color: #99bc85;
+  --accent-color: #c5705d;
+}
+
+.dark-theme {
+  --bg-color: #092635;
+  --secondary-color: #1b4242;
+  --btn-color: #5c8374;
+  --text-color: #9ec8b9;
+  --accent-color: #267984;
+}
 
 * {
   padding: 0;
@@ -13,8 +22,8 @@ $accent-light: #c5705d;
 
 .main {
   min-height: 100vh;
-  background-color: $bg-light;
-  color: $text-light;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -23,7 +32,7 @@ $accent-light: #c5705d;
 
 .input {
   margin: 4rem 0;
-  background-color: $secondary-light;
+  background-color: var(--secondary-color);
   width: 40vw;
   height: 8rem;
   font-size: 5rem;
@@ -32,8 +41,8 @@ $accent-light: #c5705d;
   padding-right: 2rem;
   border-radius: 50px;
   box-shadow:
-    0.5em 0.5em $text-light,
-    -0.5em -0.5em $accent-light;
+    0.5em 0.5em var(--text-color),
+    -0.5em -0.5em var(--accent-color);
   &:focus {
     outline: none;
   }
@@ -45,15 +54,15 @@ $accent-light: #c5705d;
   height: 7rem;
   font-size: 3rem;
   font-weight: 700;
-  background-color: $btn-light;
+  background-color: var(--btn-color);
   color: inherit;
   transition: 0.2s ease-in;
   cursor: pointer;
   border-radius: 50%;
 
   &:hover {
-    background-color: $text-light;
-    color: $btn-light;
+    background-color: var(--text-color);
+    color: var(--btn-color);
   }
 
   &:active {
@@ -78,12 +87,25 @@ $accent-light: #c5705d;
   grid-template-columns: repeat(2, 50%);
 
   & button {
-    background-color: $text-light;
-    color: $btn-light;
+    background-color: var(--text-color);
+    color: var(--btn-color);
 
-    &:hover{
-      background-color: $btn-light;
-      color: $text-light;
+    &:hover {
+      background-color: var(--btn-color);
+      color: var(--text-color);
     }
   }
+}
+
+.theme-button {
+  width: 70px;
+  height: 70px;
+  background-color: var(--bg-color);
+  position: absolute;
+  top: 10%;
+  left: 90%;
+  border-radius: 50px;
+  font-size: 40px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
 }

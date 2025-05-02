@@ -1,3 +1,19 @@
+:root {
+  --bg-color: #faf1e6;
+  --secondary-color: #fdfaf6;
+  --btn-color: #e4efe7;
+  --text-color: #99bc85;
+  --accent-color: #c5705d;
+}
+
+.dark-theme {
+  --bg-color: #092635;
+  --secondary-color: #1b4242;
+  --btn-color: #5c8374;
+  --text-color: #9ec8b9;
+  --accent-color: #267984;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,8 +22,8 @@
 
 .main {
   min-height: 100vh;
-  background-color: #faf1e6;
-  color: #99bc85;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -16,7 +32,7 @@
 
 .input {
   margin: 4rem 0;
-  background-color: #fdfaf6;
+  background-color: var(--secondary-color);
   width: 40vw;
   height: 8rem;
   font-size: 5rem;
@@ -24,7 +40,7 @@
   text-align: end;
   padding-right: 2rem;
   border-radius: 50px;
-  box-shadow: 0.5em 0.5em #99bc85, -0.5em -0.5em #c5705d;
+  box-shadow: 0.5em 0.5em var(--text-color), -0.5em -0.5em var(--accent-color);
 }
 .input:focus {
   outline: none;
@@ -36,15 +52,15 @@
   height: 7rem;
   font-size: 3rem;
   font-weight: 700;
-  background-color: #e4efe7;
+  background-color: var(--btn-color);
   color: inherit;
   transition: 0.2s ease-in;
   cursor: pointer;
   border-radius: 50%;
 }
 .button:hover {
-  background-color: #99bc85;
-  color: #e4efe7;
+  background-color: var(--text-color);
+  color: var(--btn-color);
 }
 .button:active {
   opacity: 0.5;
@@ -67,10 +83,23 @@
   grid-template-columns: repeat(2, 50%);
 }
 .operators button {
-  background-color: #99bc85;
-  color: #e4efe7;
+  background-color: var(--text-color);
+  color: var(--btn-color);
 }
 .operators button:hover {
-  background-color: #e4efe7;
-  color: #99bc85;
+  background-color: var(--btn-color);
+  color: var(--text-color);
+}
+
+.theme-button {
+  width: 70px;
+  height: 70px;
+  background-color: var(--bg-color);
+  position: absolute;
+  top: 10%;
+  left: 90%;
+  border-radius: 50px;
+  font-size: 40px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */
